@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
+import AlgoliaSearch from '../../helpers/AlgoliaSearch';
 
 class HeaderNav extends React.Component {
   constructor(props) {
@@ -23,6 +24,8 @@ class HeaderNav extends React.Component {
     if (!!this.props.inline) {
       window.addEventListener('scroll', this.refreshInlineState);
     }
+
+    AlgoliaSearch.refresh();
   }
 
   componentWillUnmount() {
