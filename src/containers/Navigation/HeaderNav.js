@@ -60,7 +60,7 @@ class HeaderNav extends React.Component {
           <Navbar.Header>
             <Navbar.Toggle />
             <Navbar.Brand>
-              <Link className="navbar-brand" to="/"><img height="48" src={logoImage} alt="API Platform" /></Link>
+              <Link className="navbar-brand" to="/"><img height={48} src={logoImage} alt="API Platform" /></Link>
             </Navbar.Brand>
           </Navbar.Header>
 
